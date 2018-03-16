@@ -1,11 +1,11 @@
 CREATE TABLE professors(
-id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-prof_fname VARCHAR(100) NOT NULL,
-prof_lname VARCHAR(100) NOT NULL
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    prof_fname VARCHAR(100) NOT NULL,
+    prof_lname VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE courses(
-section INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    section INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     course_num INT NOT NULL, -- example: 22000
     courseName VARCHAR(50) NOT NULL, -- example: algorithm
     professors_id INT,
@@ -35,22 +35,22 @@ CREATE TABLE ratings(
 -- Ratings will be: not hot, hot, sexy
 
 CREATE TABLE reviews(
- review VARCHAR(255),
-      created DATE,
-      professor_id INT,
-      FOREIGN KEY(professor_id) REFERENCES professors(id) ON DELETE CASCADE
+    review VARCHAR(255),
+    created DATE,
+    professor_id INT,
+    FOREIGN KEY(professor_id) REFERENCES professors(id) ON DELETE CASCADE
 );
 
 
 CREATE TABLE users(
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-username VARCHAR(100)
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100)
 );
 
 
 CREATE TABLE TAs(
-ta_fname VARCHAR(20),
-ta_lname VARCHAR(20),
-course_section INT,
-FOREIGN KEY(course_section) REFERENCES courses(section) ON DELETE CASCADE
+    ta_fname VARCHAR(20),
+    ta_lname VARCHAR(20),
+    course_section INT,
+    FOREIGN KEY(course_section) REFERENCES courses(section) ON DELETE CASCADE
 );
