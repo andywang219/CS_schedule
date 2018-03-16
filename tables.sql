@@ -37,8 +37,8 @@ CREATE TABLE ratings(
 CREATE TABLE reviews(
     review VARCHAR(255),
     created DATE,
-    professor_id INT,
-    FOREIGN KEY(professor_id) REFERENCES professors(id) ON DELETE CASCADE
+    professors_id INT,
+    FOREIGN KEY(professors_id) REFERENCES professors(id) ON DELETE CASCADE
 );
 
 
