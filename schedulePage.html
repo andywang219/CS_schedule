@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightblue;
+    border-style: groove;
+    border-color: blue;
+    margin: 0px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+h2 {
+  padding: 20px;
+  color: white;
+  background-color: blue;
+  border-style: groove;
+  border-color: lightblue;
+  margin: 0px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h2>Results</h2>
+
+<table>
+  <tr>
+    <th>Course Number</th>
+    <th>Course</th>
+    <th>Professor</th>
+    <th>Rating</th>
+    <th>Course Section</th>
+    <!-- <th>Chilly Pepper</th> -->
+  </tr>
+  <tr>
+    <td>CSc33600</td>
+    <td>Databases</td>
+    <td>John Conner</td>
+    <td>4.0</td>
+    <td>Mon/Wed</td>
+    <!-- <td>HOT</td> -->
+  </tr>
+  <tr>
+    <td>CSc30400</td>
+    <td>Theortical Comp Sci</td>
+    <td>Gurvitis</td>
+    <td>4.0</td>
+    <td>Tues/Thurs</td>
+    <!-- <td>HOT</td> -->
+
+  </tr>
+  <tr>
+    <td>CSc30100</td>
+    <td>Numerical</td>
+    <td>Gladkova</td>
+    <td>4.0</td>
+    <td>Mon/Wed</td>
+    <!-- <td>HOT</td> -->
+  </tr>
+</table>
+
+</script>
+
+</body>
+</html>
+
+<!-- <tr class="cs103">
+  <td><%=num%></td>
+  <td><%=name%></td>
+  <td><%=results[i]%></td>
+  <td><%=results[i]%></td>
+  <td><%=results[i]%></td>
+</tr>
+<tr class="cs104">
+  <td><%=num%></td>
+  <td><%=name%></td>
+  <td><%=results[i]%></td>
+  <td><%=results[i]%></td>
+  <td><%=results[i]%></td>
+</tr>
+<tr class="cs104">
+  <td><%=num%></td>
+  <td><%=4%></td>
+  <td><%=4%></td>
+  <td><%=4%></td>
+  <td><%=4%></td>
+</tr>
+<tr class="cs104">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs113">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs210">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs211">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs211">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs212">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs212">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs212">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs212">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs217">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs217">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs220">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs220">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs220">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs221">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs221">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs221">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs301">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs301">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs304">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs322">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs332">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs335">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs336">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs336">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs342">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs342">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs343">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs343">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs343">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs420">
+  <td>CSc33600</td>
+  <td>Databases</td>
+  <td>abcdefg</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr>
+<tr class="cs103">
+  <td>CSc30400</td>
+  <td>Theortical Comp Sci</td>
+  <td>Gurvitis</td>
+  <td>4.0</td>
+  <td>Tues/Thurs</td>
+</tr>
+<tr class="cs448">
+  <td>CSc30100</td>
+  <td>Numerical</td>
+  <td>Gladkova</td>
+  <td>4.0</td>
+  <td>Mon/Wed</td>
+</tr> -->
