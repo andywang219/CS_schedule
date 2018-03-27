@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <!--<link href="/*inert link to schedule page here " rel="stylesheet" type="text/css">--->
+    <head>
+      <style>
+       body {
+        margin: 0px;
+        padding: 0px;
+        background-color: lightblue;
+        color: white;
+        text-align: center;
+        background-position: center
+      }
+
+      .color {
+        background-color: blue;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: fantasy;
+
+      }
+      .size {
+        font-size: 40px;
+      }
+      .label {
+        color: blue;
+      }
+
+
+
+
+      </style>
+        <meta charset="utf-8">
+        <title>CSc Schedule Search</title>
+    </head>
+    <body>
+        <h2 class = "color size" style: font-size = "40px">SEARCH FOR THE BEST COMP SCI CLASS!</h2>
+
+        <p class="color size" > Class Search </p>
+        <label style="font-size:20px" class = "label" >Course Number
+          <form action="/results" method="POST">
+            <input  type="text" placeholder="xxx00" name="Course_Number" maxlength="5">
+            <button type = "submit" style="font-size:10px">submit</button>
+          </form>
+          <!-- <input  type="text" placeholder="xxx00" name="Course Number" maxlength="5">
+          <a href="http://127.0.0.1:8080/results">  replace link with Datbase
+            <button type = "submit" style="font-size:10px">submit</button>
+          </a> -->
+        </label>
+        <br>
+    </body>
+</html>
