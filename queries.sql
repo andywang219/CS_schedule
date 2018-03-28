@@ -56,6 +56,8 @@ SELECT
        chilly_pepper AS "Chilly Pepper",
        CONCAT(SUBSTRING(review, 1, 30), "...") AS Review,
        prereqs AS "PreReqs",
+       credits AS Credits,
+       seats AS Seats,
        CONCAT_WS(", ", building, room, times) AS "Location and Time"
 FROM courses JOIN professors ON courses.professors_id = professors.id
              JOIN ratings ON ratings.professors_id = professors.id
