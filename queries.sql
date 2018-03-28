@@ -40,7 +40,7 @@ SELECT
        section AS Section,
        CONCAT("CSc",course_num, " ",courseName) AS Course,
        CONCAT_WS(" ", prof_fname, prof_lname) AS Professor,
-       IFNULL(CONCAT_WS(" ", ta_fname, ta_lname), "N/A") AS "TA",
+       CONCAT_WS(" ", ta_fname, ta_lname) AS TA,
        CASE
           WHEN prof_rating = -1 THEN "N/A"
           ELSE prof_rating
@@ -48,21 +48,17 @@ SELECT
        CASE
           WHEN difficulty = -1 THEN "N/A"
           ELSE difficulty
-       END AS "Difficulty",
+       END AS "Professor Difficulty",
        CASE
           WHEN would_take_again = -1 THEN "N/A"
           ELSE would_take_again
        END AS "Would Take Again%",
        chilly_pepper AS "Chilly Pepper",
        CONCAT(SUBSTRING(review, 1, 30), "...") AS Review,
-       prereqs AS "PreReqs",
-       credits AS Credits,
        seats AS Seats,
-       CONCAT_WS(", ", building, room, times) AS "Location and Time"
+       prereqs AS PreReqs
 FROM courses JOIN professors ON courses.professors_id = professors.id
              JOIN ratings ON ratings.professors_id = professors.id
              JOIN reviews ON reviews.professors_id = professors.id
-             JOIN schedule ON courses.section = schedule.course_section
              LEFT JOIN TAs ON courses.section = TAs.course_section;
-
 
